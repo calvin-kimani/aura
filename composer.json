@@ -14,5 +14,13 @@
             "email": "calvinkimani475@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=8.2"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/calvin-kimani/aura"
+        }
+    ]
 }
