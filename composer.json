@@ -1,0 +1,18 @@
+{
+    "name": "calvin-kimani/aura",
+    "description": "An admin dashboard for configuring and customizing every facet of your Laravel application, from users to databases and beyond.",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "CalvinKimani\\Aura\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "calvin kimani",
+            "email": "calvinkimani475@gmail.com"
+        }
+    ],
+    "require": {}
+}
