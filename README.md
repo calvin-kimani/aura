@@ -34,7 +34,7 @@ As development continues, you'll be able to customize the package's settings via
 
 ### Configuration Fields
 
-- `aura_url`: This field determines the URL segment used to access the admin dashboard. You can customize it to match your project's URL structure. Default: `'aura'`.
+- `route_prefix`: This field determines the URL segment used to access the admin dashboard. You can customize it to match your project's URL structure. Default: `'aura'`.
 
 - `paginate`: Use this field to specify the number of records displayed per page in the dynamic tables. Adjust this value based on your preferences and data volume. Default: `100`.
 
@@ -44,6 +44,8 @@ As development continues, you'll be able to customize the package's settings via
 
 - `exclude_columns`: List the columns that you want to exclude from being displayed in the dynamic table. For example, sensitive columns like passwords can be excluded. Specify these columns in an array.
 
+- `route_prefix`: route to access model data.
+
 Here's an example configuration entry for the `models` field:
 
 ```php
@@ -51,6 +53,7 @@ Here's an example configuration entry for the `models` field:
     'user' => [
         'model_name' => 'App\Models\User',
         'exclude_columns' => ['password', 'two_factor_secret', 'two_factor_recovery_codes', 'pgp', 'created_at'],
+        'route_prefix' => '/users',
     ],
     // Add more models as needed
 ]
