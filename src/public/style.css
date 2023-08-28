@@ -1,0 +1,34 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scrollbar-width: thin;
+	scrollbar-color: var(--accent-color);
+}
+:root{
+	--primary-color: #FFF;
+	--secondary-color: #F0D3F7;
+	--accent-color: #C400F5;
+	--main-background-color: #fafafa;
+	--sidebar-text-color: #fff;
+}
+body{
+	background-color: var(--main-background-color);
+	min-height: 100vh;
+	display: flex;
+	font-family: monospace;
+}
+.aura-main-sidebar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 100%;
+	color: var(--sidebar-text-color);
+	padding: 1rem;
+	overflow: auto;
+}
+.aura-main-container{
+	margin-left: 250px;
+	flex: 1;
+}
