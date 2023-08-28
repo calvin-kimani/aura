@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use CalvinKimani\Aura\Http\Controllers;
 use CalvinKimani\Aura\Http\Controllers\UserController;
 
 
